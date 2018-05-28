@@ -1,6 +1,6 @@
 <?php 
 
-$string = "ten simvol";
+$string = "ten symbol";
 
 $one = preg_split('##', $string, -1, PREG_SPLIT_NO_EMPTY);
 
@@ -50,7 +50,7 @@ print_r($five);
 echo "<br>";
 echo "<br>";
 
-echo "count simvols through file\n";
+echo "count symbol through file\n";
 $six = fopen('test.txt', 'w+');
 file_put_contents('test.txt', $string);
 
