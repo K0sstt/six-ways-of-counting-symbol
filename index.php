@@ -40,9 +40,8 @@ echo $four;
 echo "<br>";
 echo "<br>";
 
-echo "function preg_replace and explode, but explode returns one more item\n";
-echo "since we have 10 elements that surround 11 nothing\n";
-echo "from this it turns out that by cutting out 10 elements we get 11 nothing\n";
+echo "firstly, i replace every symbol on '1', then i split string by symbol '1'\n";
+echo "and i have array which consist of 10 empty elements plus 1\n";
 $five = preg_replace('#.#', '1', $string);
 $five = explode('1', $five);
 print_r($five);
